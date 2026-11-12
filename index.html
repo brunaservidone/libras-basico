@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site para aprender o básico de Libras: letras, palavras e frases.">
+    <title>Libras Básico</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+    <header class="cabecalho">
+        <h1 class="cabecalho-titulo">Libras Básico</h1>
+        <button id="botao-menu" class="botao-menu" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu">☰</button>
+        <nav id="menu" class="cabecalho-menu" aria-label="Principal">
+            <ul>
+                <li><a class="cabecalho-menu-item" href="#letras">Letras</a></li>
+                <li><a class="cabecalho-menu-item" href="#palavras">Palavras</a></li>
+                <li><a class="cabecalho-menu-item" href="#frases">Frases</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="conteudo">
+        <section class="boas-vindas">
+            <h2>Bem-vindo(a)!</h2>
+            <p>Libras é a Língua Brasileira de Sinais, reconhecida por lei federal desde 2002. Aqui você acompanha o que já aprendeu do básico: toque em um cartão para marcá-lo como aprendido.</p>
+            <a class="botao" href="https://youtu.be/y0sfAnvxY8s" target="_blank" rel="noopener">Clique aqui para você começar!</a>
+            <p id="progresso" class="progresso" aria-live="polite"></p>
+        </section>
+
+        <section id="letras">
+            <h2>Letras</h2>
+            <div class="grade" data-categoria="letras"></div>
+        </section>
+
+        <section id="palavras">
+            <h2>Palavras</h2>
+            <div class="grade" data-categoria="palavras"></div>
+        </section>
+
+        <section id="frases">
+            <h2>Frases</h2>
+            <div class="grade" data-categoria="frases"></div>
+        </section>
+    </main>
+
+    <footer>Feito por Bruna Servidone</footer>
+    <script src="script.js"></script>
+</body>
+</html>
